@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="container text-center">
+    <!-- header starts -->
+    <header>
+        <h1 class="text-warning">Choose Your Phones</h1>
+        <!-- search box -->
+        <div class="py-4">
+            <input id="search-field" class="px-3 py-1" type="text" placeholder="Search Your Phone">
+            <button id="search-btn" class="btn btn-primary px-5 ms-3">search</button>
+        </div>
+    </header>
+    <!-- header ends -->
+
+    <main>
+        <!-- phone container starts -->
+        <section>
+            <div id="phones-container" class="row row-cols-1 row-cols-md-4 g-4">
+
+            </div>
+        </section>
+        <!-- phone container ends -->
+
+        <!-- phone details by modal starts -->
+        <section class="text-start">
+            <!-- Button trigger modal -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="phone-details-container" class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger px-3" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- phone details by modal ends -->
+
+        <!-- show more starts -->
+        <div id="show-more" class="my-3 d-none">
+            <button id="show-more-phones" class="btn btn-warning px-4">Show More</button>
+        </div>
+        <!-- show more ends -->
+
+        <!-- no found phone message -->
+        <div id="no-found-message" class="my-5 text-danger d-none">
+            <h3>No phone found. Please try a new search.</h3>
+        </div>
+
+        <!-- spiner -->
+        <div id="loading-spiner" class="spinner-border my-5 d-none" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </main>
+
+
+    <script src="js/utilities.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/phone.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting Phone</title>
+    <link rel="stylesheet" href="css/full.css">
+</head>
+
+<body class="mx-auto">
+    <header class="w-1/2 mx-auto mb-6">
+        <h1 class="font-bold text-2xl text-blue-600 my-6 ml-20">Hunting Your Phone</h1>
+        <input id="search-field" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+        <button id="search-btn" class="btn btn-primary ml-5">Search</button>
+    </header>
+
+    <main>
+        <section class="px-20">
+            <div id="phone-container" class="grid grid-cols-4 gap-4">
+
+            </div>
+
+            <!-- progress bar -->
+            <progress id="progress-bar" class="progress w-90 hidden"></progress>
+
+            <!-- not found message -->
+            <h3 id="not-found-message" class="text-center mt-20 text-xl text-red-700 hidden">Not Found Any Result.
+                Please Try A New Search</h3>
+
+            <!-- show all btn -->
+            <div class="justify-center w-1/5 mx-auto">
+                <button id="show-all-btn" class="btn btn-primary my-5 justify-center hidden">Show All</button>
+
+            </div>
+
+        </section>
+
+
+        <section>
+            <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+                <div id="phone-details" class="modal-box">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="js/phone-hunter.js"></script>
+    <script src="js/3.1.8"></script>
+</body>
+
+</html>
